@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:alpaca/form.dart';
 import 'package:alpaca/capture_image.dart';
-import 'package:alpaca/photoeditor.dart';
 import 'package:alpaca/camera_app.dart';
 
 void main() => runApp(MyApp());
