@@ -16,17 +16,17 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new CaptuerPage(),
+      home: new CaptureScreen(),
     );
   }
 }
 
-class CaptuerPage extends StatefulWidget {
+class CaptureScreen extends StatefulWidget {
   @override
-  _CaptuerPageState createState() => new _CaptuerPageState();
+  _CaptureScreenState createState() => new _CaptureScreenState();
 }
 
-class _CaptuerPageState extends State<CaptuerPage> {
+class _CaptureScreenState extends State<CaptureScreen> {
   GlobalKey _globalKey = new GlobalKey();
 
   bool inside = false;

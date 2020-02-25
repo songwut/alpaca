@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:alpaca/form.dart';
-import 'package:alpaca/capture_image.dart';
+import 'package:alpaca/capture_screen.dart';
+import 'package:alpaca/list_json_screen.dart';
 import 'package:alpaca/camera_app.dart';
 
 void main() => runApp(MyApp());
@@ -91,8 +92,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   ),
                 );
                 */
-          Navigator.of(context).push(_createRoute());
-          //Navigator.push( context, MaterialPageRoute(builder: (context) => FormPage()),);
+          //Navigator.of(context).push(_createRoute());
+          Navigator.push( context, MaterialPageRoute(builder: (context) => FormPage()),);
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
@@ -103,7 +104,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 Route _createRoute() {
   return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => FormPage(),
+    pageBuilder: (context, animation, secondaryAnimation) => MainFetchDataScreen(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       var begin = Offset(1.0, 0.0);
       var end = Offset.zero;
